@@ -24,6 +24,7 @@
 <script>
 import axios from "axios";
 import navbar from "@/components/navbar.vue";
+import NProgress from "nprogress";
 
 export default {
   components: {
@@ -36,14 +37,18 @@ export default {
   },
   methods: {
     fetchItems() {
-      axios.get("https://mynewportfolio.herokuapp.com/projects").then(
-        response => {
-          this.projects = response.data;
-        },
-        error => {
-          console.log(error);
-        }
-      );
+      axios
+        .get("https://mynewportfolio.herokuapp.com/projects")
+        .then(NProgress.start())
+        .then(
+          response => {
+            this.projects = response.data;
+            NProgress.done();
+          },
+          error => {
+            console.log(error);
+          }
+        );
     },
     trimDate(date) {
       date = date.slice(0, 10);
