@@ -31,6 +31,7 @@ ul {
   width: 32%;
   margin: 0 auto;
   display: flex;
+  padding-bottom: 20px;
 }
 
 li {

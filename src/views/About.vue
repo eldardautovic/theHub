@@ -81,6 +81,7 @@
 .nav {
   display: flex;
   justify-content: center;
+  padding-bottom: 20px;
   li {
     font-size: 0.8em;
     list-style: none;
@@ -93,6 +94,12 @@
     &:last-child {
       padding: 0px;
     }
+  }
+}
+
+@media only screen and (max-width: 700px) {
+  .about {
+    width: 70%;
   }
 }
 </style>

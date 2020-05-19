@@ -132,4 +132,15 @@ li {
   list-style: none;
   width: 20vw;
 }
+
+@media only screen and(max-width: 700px) {
+  ul {
+    flex-direction: column;
+    padding-bottom: 40px;
+  }
+
+  li {
+    width: 100%;
+  }
+}
 </style>

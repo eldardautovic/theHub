@@ -60,6 +60,7 @@ export default {
 
 ul {
   display: flex;
+  padding-bottom: 20px;
   justify-content: center;
 }
 
@@ -74,6 +75,12 @@ li {
   }
   &:last-child {
     padding: 0px;
+  }
+}
+
+@media only screen and (max-width: 700px) {
+  .home {
+    width: 70%;
   }
 }
 </style>

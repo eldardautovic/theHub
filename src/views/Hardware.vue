@@ -59,6 +59,7 @@
 ul {
   display: flex;
   justify-content: center;
+  padding-bottom: 20px;
 }
 
 li {
@@ -72,6 +73,12 @@ li {
   }
   &:last-child {
     padding: 0px;
+  }
+}
+
+@media only screen and (max-width: 700px) {
+  .hardware {
+    width: 70%;
   }
 }
 </style>
