@@ -5,6 +5,8 @@ The site is made with Vue.js for Front End and Node.js in combination with Expre
 
 It's hosted on Netlify for Front End and Heroku for the Back End.
 
+Link: https://eldarshub.netlify.app/
+
 ## Project setup
 ```
 npm install
